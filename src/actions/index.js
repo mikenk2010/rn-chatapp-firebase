@@ -11,6 +11,7 @@ export const addMessage = (msg) => ({
 
 export const sendMessage = (text, user) => {
     return function (dispatch) {
+      console.log("REDUX", text, user)
         let msg = {
                 text: text,
                 time: Date.now(),

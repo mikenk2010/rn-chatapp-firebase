@@ -35,7 +35,7 @@ const LoginOrChat = connect(
     if (authorized) {
         return (<ChatUI />);
     }else{
-        dispatch(checkUserExists());
+        dispatch(checkUserExists());        
         return (<LoginUI />);
     }
 });

@@ -66,11 +66,7 @@ class ChatUI extends Component {
     sendMessage = () => {
       console.log("MSG SENDING: ", this.state.text)
       var text = this.state.text
-      firebase.database()
-              .ref(`messages/text`)
-              .set({
-                  text
-              });
+      this.props.dispatch(sendMessage(text, this.props.user));
     }
 
     render() {
@@ -81,7 +77,6 @@ class ChatUI extends Component {
                 </Text>
                 <KeyboardAwareScrollView ref="scroll"
                                          onLayout={this.onScrollViewLayout}>
-                    <Messages />
                     <TextInput onLayout={this.onInputLayout}
                       onChangeText={(text) => this.setState({text})}
                       value={this.state.text}

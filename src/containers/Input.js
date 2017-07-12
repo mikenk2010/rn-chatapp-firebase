@@ -51,6 +51,7 @@ class Input extends Component {
                        value={this.state.text}
                        onFocus={this.onFocus}
                        onBlur={this.onBlur}
+                       style={{width:200}}
                        ref="input"/>
         )
     }
