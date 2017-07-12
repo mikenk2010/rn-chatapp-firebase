@@ -4,4 +4,4 @@
 - Update your firebase config `src/firebase.js`
 
 ### Demo
-![Image](http://i.imgur.com/5K9QKX1.png)
+![Image](https://media.giphy.com/media/3ohryqLJk5m7NsrgOs/giphy.gif)
